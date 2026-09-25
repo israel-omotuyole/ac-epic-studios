@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&C Epic Studios | Luxury Cinematography & Photography</title>
+    <link rel="icon" type="image/png" href="A & C logo.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+        .font-script { font-family: 'Great Vibes', cursive; }
+        
+        /* Background image lens effects */
+        @keyframes lens-flare-pulse {
+            0%, 100% { opacity: 0.85; transform: scale(1); }
+            50% { opacity: 0.95; transform: scale(1.02); }
+        }
+        .animate-lens {
+            animation: lens-flare-pulse 9s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200 selection:bg-[#dc2626] selection:text-white antialiased overflow-x-hidden">
+    <section class="relative min-h-[92vh] sm:min-h-screen bg-black overflow-hidden flex flex-col justify-between">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=2200&q=90" 
+                 alt="Cinematic Camera Lens Aperture" 
+                 class="w-full h-full object-cover object-right md:object-center opacity-85 filter brightness-90 animate-lens">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+        </div>
+        <nav class="relative z-20 max-w-7xl mx-auto w-full px-6 sm:px-10 py-6 flex justify-between items-center" data-aos="fade-down" data-aos-duration="800">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="A & C logo.png" alt="A&C Epic Studios" class="w-12 h-12 object-contain rounded-full border border-[#d4af37]/60 shadow-lg group-hover:scale-105 transition duration-300">
+                <div class="flex flex-col leading-none">
+                    <span class="text-base sm:text-lg font-serif font-bold tracking-widest text-white uppercase">A&C <span class="text-[#dc2626]">Epic</span></span>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-[#d4af37] font-semibold mt-0.5">Studios</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-9 text-xs uppercase tracking-widest font-medium text-gray-300">
+                <a href="#about" class="hover:text-[#d4af37] transition duration-200">About</a>
+                <a href="our-works.html" class="hover:text-[#d4af37] transition duration-200">OUR WORKS</a>
+                <a href="#reviews" class="hover:text-[#d4af37] transition duration-200">Testimonials</a>
+                <a href="#instagram" class="hover:text-[#d4af37] transition duration-200">Instagram</a>
+                <a href="bookings.html" class="bg-[#dc2626] hover:bg-[#b91c1c] text-white text-[11px] font-bold px-6 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-red-900/50">
+                    Book Session
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 right-0 z-30 bg-black/95 border-b border-zinc-800 px-6 py-6 space-y-4 text-xs uppercase tracking-widest font-medium shadow-2xl">
+            <a href="#about" class="block text-gray-300 hover:text-white py-1">About</a>
+            <a href="our-works.html" class="block text-gray-300 hover:text-white py-1">OUR WORKS</a>
+            <a href="#reviews" class="block text-gray-300 hover:text-white py-1">Testimonials</a>
+            <a href="#instagram" class="block text-gray-300 hover:text-white py-1">Instagram</a>
+            <a href="bookings.html" class="block bg-[#dc2626] text-white text-center py-3 rounded-full font-bold">Book Session</a>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-6 sm:px-10 py-16 sm:py-24 my-auto">
+            <div class="max-w-2xl space-y-6">
+                <span class="text-[#d4af37] text-xs uppercase tracking-[0.3em] font-semibold block" data-aos="fade-up" data-aos-duration="700">
+                    Washington • Weddings & Creative Media
+                </span>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif text-white font-normal leading-[1.08] tracking-tight" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+                    Capturing Moments <br>
+                    <span class="italic font-light text-gray-300">Through Cinema.</span>
+                </h1>
+                
+                <p class="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed max-w-lg" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                    Specializing in high-end wedding films, milestone birthday galas, editorial portraits, and corporate productions across Seattle, Bellevue, and statewide Washington.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+                    <a href="our-works.html" class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-black text-xs uppercase tracking-widest font-semibold px-8 py-3.5 rounded-full transition duration-300 shadow-lg hover:scale-105">
+                        Explore Works
+                    </a>
+                    <a href="https://wa.me/12066191955" target="_blank" class="inline-flex items-center justify-center border border-white/30 hover:border-[#d4af37] text-white hover:text-[#d4af37] text-xs uppercase tracking-widest font-semibold px-8 py-3.5 rounded-full transition duration-300 hover:scale-105">
+                        Chat On WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative z-10 pb-8 text-center text-xs tracking-widest text-zinc-500 uppercase animate-bounce">
+            Scroll To Discover ↓
+        </div>
+    </section>
+
+    <section id="about" class="relative py-24 sm:py-32 px-6 sm:px-10 max-w-6xl mx-auto" data-aos="fade-up" data-aos-duration="900">
+        <div class="text-center mb-12 select-none">
+            <h2 class="text-6xl sm:text-8xl md:text-9xl font-serif font-light text-zinc-800/40 tracking-wider">
+                About
+            </h2>
+            <div class="-mt-8 sm:-mt-12">
+                <span class="text-[#d4af37] text-xs uppercase tracking-[0.25em] font-semibold">The Story Behind The Lens</span>
+                <h3 class="text-2xl sm:text-3xl font-serif text-white mt-1">A&C Epic Studios</h3>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                We are a dedicated video production and photography company focused on immortalizing celebrations. Whether it is an emotional wedding vow, a vibrant milestone birthday, or a corporate milestone, we believe that authentic visual storytelling comes from genuine observation, not forced directing.
+            </p>
+            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Operating out of Washington State, we bring state-of-the-art 4K cinema optics, professional directional audio, and an in-house editing suite to make sure every project looks magazine-worthy and timeless.
+            </p>
+
+            <div class="pt-6 flex justify-center gap-10 text-center border-t border-zinc-800">
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <span class="block text-2xl font-serif text-[#d4af37] font-semibold">4K HDR</span>
+                    <span class="text-[11px] uppercase tracking-wider text-gray-500">Cinema Master</span>
+                </div>
+                <div class="w-px h-10 bg-zinc-800"></div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <span class="block text-2xl font-serif text-white font-semibold">Statewide</span>
+                    <span class="text-[11px] uppercase tracking-wider text-gray-500">Washington Coverage</span>
+                </div>
+                <div class="w-px h-10 bg-zinc-800"></div>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <span class="block text-2xl font-serif text-[#dc2626] font-semibold">Dual Crew</span>
+                    <span class="text-[11px] uppercase tracking-wider text-gray-500">Photo + Cinema</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-20 px-6 sm:px-10 max-w-6xl mx-auto">
+        
+        <div class="mb-10 max-w-xl" data-aos="fade-right" data-aos-duration="800">
+            <h2 class="text-3xl sm:text-4xl font-serif text-white font-normal">OUR WORKS</h2>
+            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mt-2">
+                Discover our portfolio at A&C Epic Studios, where each image embodies our commitment to precision and storytelling. From weddings to commercial shoots, OUR WORKS reflects artistry in capturing unique narratives.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="relative h-80 rounded-2xl overflow-hidden group bg-zinc-900 border border-zinc-800 shadow-md" data-aos="fade-up" data-aos-duration="700">
+                <img src="image-1.jpeg" alt="Studio Portraiture" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex flex-col justify-end p-4">
+                    <span class="text-[#d4af37] text-[10px] uppercase tracking-widest font-bold">Studio</span>
+                    <h4 class="text-white text-sm font-serif">Spotlight Portraiture</h4>
+                </div>
+            </div>
+
+            <div class="relative h-80 rounded-2xl overflow-hidden group bg-zinc-900 border border-zinc-800 shadow-md" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+                <img src="image-2.jpeg" alt="Warm Floral Shoot" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex flex-col justify-end p-4">
+                    <span class="text-[#dc2626] text-[10px] uppercase tracking-widest font-bold">Creative</span>
+                    <h4 class="text-white text-sm font-serif">Floral Warm Tone</h4>
+                </div>
+            </div>
+
+            <div class="relative h-80 rounded-2xl overflow-hidden group bg-zinc-900 border border-zinc-800 shadow-md" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+                <img src="image-4.jpeg" alt="Milestone Birthday Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex flex-col justify-end p-4">
+                    <span class="text-[#d4af37] text-[10px] uppercase tracking-widest font-bold">Celebrations</span>
+                    <h4 class="text-white text-sm font-serif">Milestone Evening Gown</h4>
+                </div>
+            </div>
+
+            <div class="relative h-80 rounded-2xl overflow-hidden group bg-zinc-900 border border-zinc-800 shadow-md" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+                <img src="image-6.jpeg" alt="Graduation & Lifestyle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex flex-col justify-end p-4">
+                    <span class="text-[#dc2626] text-[10px] uppercase tracking-widest font-bold">Graduation</span>
+                    <h4 class="text-white text-sm font-serif">Sunlit Natural Candid</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-10 mb-10">
+            <a href="our-works.html" class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-black text-xs uppercase tracking-widest font-semibold px-8 py-3.5 rounded-full transition duration-300 shadow-lg hover:scale-105">
+                Explore More
+            </a>
+        </div>
+
+        <div class="my-20 flex justify-center items-center gap-3 opacity-70" data-aos="zoom-in" data-aos-duration="800">
+            <span class="text-xl sm:text-2xl text-zinc-400">🌒</span>
+            <span class="text-2xl sm:text-3xl text-zinc-300">🌓</span>
+            <span class="text-3xl sm:text-4xl text-white">🌕</span>
+            <span class="text-2xl sm:text-3xl text-zinc-300">🌗</span>
+            <span class="text-xl sm:text-2xl text-zinc-400">🌘</span>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL FEATURE (FIXED: FULL CLEAR IMAGE & UNBLOCKED LOGO) -->
+    <section id="reviews" class="py-16 px-6 sm:px-10 max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="900">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl font-serif text-white font-medium">What Our Clients Say</h2>
+            <div class="w-12 h-0.5 bg-[#d4af37] mx-auto mt-2"></div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 shadow-2xl">
+            <div class="relative w-full h-[340px] sm:h-[420px] md:h-[480px] bg-black overflow-hidden">
+                <img src="image-7.jpeg" 
+                     alt="Wedding Couple Moments" 
+                     class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+            </div>
+            <div class="relative z-10 bg-black px-6 sm:px-10 pb-8 pt-0 text-center border-t border-zinc-900">
+                <div class="relative z-20 w-16 h-16 sm:w-20 sm:h-20 mx-auto -mt-8 sm:-mt-10 rounded-full border-2 border-[#d4af37] bg-black p-1 shadow-2xl flex items-center justify-center">
+                    <img src="A & C logo.png" alt="A&C Epic Avatar" class="w-full h-full object-contain rounded-full">
+                </div>
+                
+                <p class="text-gray-200 text-sm sm:text-base italic leading-relaxed max-w-xl mx-auto mt-5">
+                    “A&C Epic Studios brought our vision to life. The film captured every single emotional moment of our traditional and reception day. The color grading and audio were beyond our expectations.”
+                </p>
+                
+                <p class="text-[#d4af37] text-xs font-semibold uppercase tracking-wider mt-4">
+                    — K. & M. Adeleke • Seattle Wedding
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram" class="py-20 px-6 sm:px-10 max-w-6xl mx-auto">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="700">
+            <a href="https://www.instagram.com/a.c_epicstudios?stkn=Y2Y3MGFjc3o3dzgy&utm_source=qr" 
+               target="_blank" 
+               class="font-script text-5xl sm:text-6xl text-white hover:text-[#d4af37] transition duration-300 inline-block hover:scale-105">
+                Instagram
+            </a>
+            <p class="text-xs text-zinc-500 uppercase tracking-widest mt-1">@a.c_epicstudios • Follow The Daily Visuals</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="space-y-5" data-aos="fade-up" data-aos-duration="800">
+                <div class="h-80 rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-md group">
+                    <img src="image-1.jpeg" alt="Editorial Fashion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-md group">
+                    <img src="image-5.jpeg" alt="Studio Posing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+            <div class="space-y-5" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
+                <div class="h-64 rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-md group">
+                    <img src="image-2.jpeg" alt="Warm Studio Floral" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="h-80 rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-md group">
+                    <img src="image-4.jpeg" alt="Evening Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+            <div class="space-y-5 sm:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                <div class="h-80 rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-md group">
+                    <img src="image-11.jpeg" alt="Toddler Milestone Shoot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-md group">
+                    <img src="image-6.jpeg" alt="Outdoor Casual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-10 px-6 sm:px-10 max-w-6xl mx-auto" data-aos="zoom-in" data-aos-duration="800">
+        <div class="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 py-16 px-8 sm:px-14 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+            
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#d4af37]/20 rounded-full blur-[90px] pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-lg text-center md:text-left">
+                <h3 class="text-3xl sm:text-4xl font-serif text-white font-normal leading-tight">
+                    Capturing The Best <br>
+                    Moments For You.
+                </h3>
+                <p class="text-gray-400 text-xs sm:text-sm mt-2">
+                    Accepting dates across Washington for weddings, birthday galas, and studio sessions.
+                </p>
+            </div>
+
+            <div class="relative z-10 shrink-0">
+                <a href="bookings.html" class="inline-block bg-[#dc2626] hover:bg-[#b91c1c] text-white text-xs uppercase tracking-widest font-bold px-8 py-4 rounded-full transition duration-300 shadow-lg hover:scale-105">
+                    Book A Session &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-400 pt-16 pb-8 border-t border-zinc-800 text-xs">
+        <div class="max-w-6xl mx-auto px-6 sm:px-10 grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-zinc-800">
+            
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="A & C logo.png" alt="A&C Epic Studios" class="w-10 h-10 object-contain rounded-full border border-[#d4af37]">
+                    <span class="text-base font-serif font-bold text-white tracking-widest uppercase">A&C <span class="text-[#dc2626]">Epic</span></span>
+                </div>
+                <p class="text-gray-500 text-xs leading-relaxed">
+                    Cinematic videography and professional portrait photography serving Washington State.
+                </p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed to Newsletter!');" class="flex gap-2">
+                    <input type="email" placeholder="Your Email Address" required class="bg-zinc-900 border border-zinc-800 px-3 py-2 rounded text-xs text-white w-full focus:outline-none focus:border-[#d4af37]">
+                    <button type="submit" class="bg-[#d4af37] hover:bg-[#c5a059] text-black font-bold px-3.5 py-2 rounded text-xs transition">Join</button>
+                </form>
+            </div>
+
+            <div>
+                <h4 class="font-serif font-semibold text-white uppercase tracking-wider text-xs mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="our-works.html" class="hover:text-white transition">Portfolio Showcase</a></li>
+                    <li><a href="#reviews" class="hover:text-white transition">Client Reviews</a></li>
+                    <li><a href="bookings.html" class="hover:text-white transition">Book Session</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif font-semibold text-white uppercase tracking-wider text-xs mb-4">Disciplines</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Wedding Cinematography</li>
+                    <li>Milestone Birthdays & Galas</li>
+                    <li>Baby Showers & Toddlers</li>
+                    <li>Graduation & Headshots</li>
+                    <li>Corporate & Church Media</li>
+                </ul>
+            </div>
+
+            <div class="space-y-2">
+                <h4 class="font-serif font-semibold text-white uppercase tracking-wider text-xs mb-4">Contact Info</h4>
+                <p class="text-gray-400">Washington, United States</p>
+                <p class="text-gray-400">Phone 1: <a href="tel:+12066191955" class="text-white hover:underline">+1 (206) 619-1955</a></p>
+                <p class="text-gray-400">Phone 2: <a href="tel:+14257705924" class="text-white hover:underline">+1 (425) 770-5924</a></p>
+                <div class="pt-2">
+                    <a href="https://wa.me/12066191955" target="_blank" class="text-[#d4af37] font-semibold hover:underline block">
+                        Chat on WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 sm:px-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-gray-500 text-[11px] gap-3">
+            <p>&copy; 2026 A&C Epic Studios. All Rights Reserved.</p>
+            <div class="flex items-center gap-4">
+                <a href="https://www.instagram.com/a.c_epicstudios?stkn=Y2Y3MGFjc3o3dzgy&utm_source=qr" target="_blank" class="hover:text-white transition">@a.c_epicstudios</a>
+                <span>•</span>
+                <a href="https://www.instagram.com/shotbymistertee?stkn=cXJ2eDl6MnpmeTh4&utm_source=qr" target="_blank" class="hover:text-white transition">@shotbymistertee</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-zinc-950 text-gray-400 text-xs py-3 px-6 border-t border-zinc-800 text-center sm:text-left">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <p>Serving Seattle, Bellevue, Tacoma & Statewide Washington</p>
+            <div class="flex items-center gap-4 text-[11px]">
+                <a href="tel:+12066191955" class="hover:text-white transition">+1 (206) 619-1955</a>
+                <span class="text-zinc-700">|</span>
+                <a href="tel:+14257705924" class="hover:text-white transition">+1 (425) 770-5924</a>
+                <span class="text-zinc-700">|</span>
+                <a href="https://wa.me/12066191955" target="_blank" class="text-[#d4af37] hover:underline font-bold">WhatsApp Desk</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800
+        });
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
